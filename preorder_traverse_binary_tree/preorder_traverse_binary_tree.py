@@ -19,7 +19,7 @@ class Solution:
             
             else:
                 left_preorder, right_preorder = [], []
-                for n in preorder:
+                for n in preorder:  
                     if n < root.val: left_preorder.append(n)
                     else: right_preorder.append(n)
                 if left_preorder != []: root.left = recursePreorder(left_preorder)
