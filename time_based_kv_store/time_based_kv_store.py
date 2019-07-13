@@ -26,4 +26,4 @@ class TimeMap:
                     left = mid + 1
             return output
             
-        return binarySearch(self.vals[key])
+    return binarySearch(self.vals[key])A }|"?{AZ"?}
