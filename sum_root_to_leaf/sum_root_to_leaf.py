@@ -6,12 +6,12 @@
 #         self.right = None
 
 class Solution:
-    def smallestFromLeaf(self, root: TreeNode) -> str:
-
-        # do DFS and also track a parents array
-        parents = {root: None}
+    def sumNumbers(self, root: TreeNode) -> int:
+        if not root: return 0
+        
         stack = [root]
         leaves = set()
+        parents = {root: None}
         while stack:
             v = stack.pop()
             if v.left:
@@ -23,17 +23,12 @@ class Solution:
             if not v.left and not v.right:
                 leaves.add(v)
         
-        paths = []
-        min_s = None
+        
+        total = 0
         for v in leaves:
-            update = True
-            s = ''
+            path = ''
             while v is not None:
-                s += chr(ord('a') + v.val)
+                path += str(v.val)
                 v = parents[v]
-                # break early if we can
-                if min_s and s >= min_s:
-                    update = False
-                    break
-            if update: min_s = s
-        return min_s
+            total += int(path[::-1])
+        return total
