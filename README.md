@@ -1,2 +1,45 @@
-# leet
-Series of optimized solutions to LeetCode problems
+# Leet
+## A series of optimized solutions to LeetCode solutions.
+### Contents: 
+2d_matrix_search
+3sum
+add_search_word
+add_two_nums
+binary_tree_inorder
+binary_tree_level_order_traversal
+binary_tree_max_width
+binary_tree_print
+binary_tree_vert_trav
+binary_tree_zigzag
+bst_check_valid
+bst_insert
+buy_sell_stock_ii
+camel_case
+city_skyline_max_increase
+climbing_stairs
+container_most_water
+cousins_binary_tree
+domino_rotations
+find_peak_element
+first_unique_char
+group_anagrams
+jump_game_i
+longest_common_prefix
+longest_palindromic
+longest_substr_wo_repeat_char
+longest_turbulent_subarray
+magic_dict
+max_binary_tree
+maximum_square
+max_subarray
+merge_two_sorted_lists
+odd_even_linked_list
+palindromic_substr
+README.md
+remove_element
+satisfiability
+str_to_int
+swap_nodes_in_pairs
+trie
+two_sum
+zigzag
