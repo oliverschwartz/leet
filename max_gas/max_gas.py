@@ -7,6 +7,7 @@ class Solution:
         start_targets = [idx for idx, n in enumerate(min_gas) if n == 0]
         if start_targets == []: return -1
         
+        
         # max gas is an array containing the max gas we've seen at 
         # a given station
         # so if we arrive there with less, we can tap out immediately
