@@ -85,6 +85,5 @@ public class RemoveDuplicatesUnsortedList {
         
         // no output
         printList(head);
-
     }
 }
