@@ -8,6 +8,17 @@ class Solution(object):
         
         # annoying edge case
         if n == 1: return nums[0]
+
+        # binary search, using the fact that we know
+        # to move left or right depending on whether a pair we are on
+        # has odd-even indexes, or even-odd (the single element 'displaces'
+        # elements to the right
+        # 
+        # for example
+        #   [3,   3,   7,   7,   10,   11,   11]
+        #   [0,   1,   2,   3,   4,    5,    6]
+        #   even  odd  even odd  even  odd   even
+        #   RIGHT      RIGHT   TARGET   LEFT
         
         l = 0
         r = n - 1
