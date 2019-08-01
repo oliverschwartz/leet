@@ -20,4 +20,31 @@ class Solution:
         
         recursePathSum(root, sum, '')
         return [p[:-1].split('|') for p in self.paths]
+
+
+# iterative solution
+
+class Solution:
+    def pathSum(self, root: TreeNode, sum: int) -> int:
+        if not root: return 0          
+        
+        # populate stack with (node, sum) tuples as starting points
+        visited = set()
+        n_paths = 0  
+        stack = [(root, sum)]
+        while stack:
+            v, target = stack.pop()
+            if v.val == target:
+                n_paths += 1
+            if v not in visited and v != root:
+                visited.add(v)
+                stack.append((v, sum))
+            if v.right:
+                stack.append((v.right, target - v.val))
+            if v.left:
+                stack.append((v.left, target - v.val))
+            
+        return n_paths
+            
+            
         
