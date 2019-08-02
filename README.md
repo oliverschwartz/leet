@@ -1,5 +1,5 @@
 # Leet
-## A series of optimized solutions to LeetCode solutions.
+## A series of optimized solutions to LeetCode problems.
 ### Contents: 
 2d_matrix_search
 3sum
