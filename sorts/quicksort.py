@@ -3,6 +3,9 @@ def quicksort(arr):
         i = low - 1
         pivot = arr[high]
         for j in range(low, high + 1):
+            # move smaller elements to left of array, 
+            # then move i up
+            # at the end, pivot will be sitting at if
             if arr[j] <= pivot:
                 i += 1
                 arr[j], arr[i] = arr[i], arr[j]
